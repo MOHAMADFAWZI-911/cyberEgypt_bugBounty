@@ -1,0 +1,542 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Researcher",
+      "email": "alice@example.com",
+      "password": "9b8769a4a742959a2d0298c36fb70623f2dfacda8436237df08d8dfd5b37374c",
+      "role": "researcher",
+      "points": 120,
+      "bio": "Experienced web security researcher with a focus on OWASP Top 10.",
+      "specializations": [
+        "Web",
+        "API"
+      ],
+      "reputation_score": 95
+    },
+    {
+      "id": 2,
+      "name": "Acme Corp",
+      "email": "acme@example.com",
+      "password": "8174ad2f82c8e87d4b2e75c610aee3e19a89ce349ca443a073203e3b066316d1",
+      "role": "company",
+      "company_id": 1
+    },
+    {
+      "id": 3,
+      "name": "FixIt LLC",
+      "email": "fixit@example.com",
+      "password": "b7f357de22df9be175af7972e467f5a2764e980b20b5fad77de45207ed8ed7c2",
+      "role": "provider",
+      "bio": "Cybersecurity service provider specializing in penetration testing and vulnerability remediation.",
+      "specializations": [
+        "Web",
+        "Mobile",
+        "Network"
+      ],
+      "reputation_score": 92
+    },
+    {
+      "name": "a",
+      "email": "a@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "company",
+      "id": 4
+    },
+    {
+      "name": "aa",
+      "email": "aa@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "researcher",
+      "id": 5,
+      "bio": "",
+      "specializations": [],
+      "reputation_score": 50
+    },
+    {
+      "name": "aa",
+      "email": "aaa@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "provider",
+      "id": 6,
+      "bio": "",
+      "specializations": [],
+      "reputation_score": 50
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "researcher",
+      "id": 7,
+      "linkedin_url": "https://linkedin.com/in/ahmed-ali-omar-b34637245",
+      "github_url": "",
+      "payment_info": {
+        "type": "paypal",
+        "email": "omarahmedali569@gmail.com"
+      },
+      "bio": "Bug bounty hunter from Egypt.",
+      "specializations": [
+        "Web",
+        "Mobile"
+      ],
+      "reputation_score": 88
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed1@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "company",
+      "id": 8
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed2@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "provider",
+      "id": 9,
+      "linkedin_url": "https://linkedin.com/in/ahmed-ali-omar-b34637245",
+      "github_url": "",
+      "payment_info": {
+        "type": "paypal",
+        "email": "omarahmedali569@gmail.com"
+      },
+      "bio": "Experienced penetration tester and vulnerability remediation specialist.",
+      "specializations": [
+        "API",
+        "Cloud"
+      ],
+      "reputation_score": 90
+    },
+    {
+      "name": "ahmed",
+      "email": "aaaa@gmail.com",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "role": "provider",
+      "id": 10
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "name": "Acme Corp",
+      "description": "Demo company",
+      "settings": {
+        "bounty_enabled": true
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "name": "Acme Website",
+      "scope": "https://acme.example.com/*"
+    }
+  ],
+  "reward_options": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "type": "cash",
+      "currency": "USD",
+      "amount_min": 100,
+      "amount_max": 1000,
+      "eligible_severity": [
+        "High",
+        "Critical"
+      ],
+      "in_scope_only": true,
+      "auto_payout": false,
+      "visible_to_researchers": true,
+      "created_at": "2025-09-16T15:00:00Z"
+    },
+    {
+      "id": 2,
+      "company_id": 1,
+      "type": "points",
+      "points_value": 500,
+      "eligible_severity": [
+        "Medium",
+        "High",
+        "Critical"
+      ],
+      "visible_to_researchers": true,
+      "created_at": "2025-09-16T15:10:00Z"
+    },
+    {
+      "id": 100,
+      "company_id": 1,
+      "asset_id": 1,
+      "type": "cash",
+      "currency": "USD",
+      "amount_min": 200,
+      "amount_max": 800,
+      "eligible_severity": [
+        "High",
+        "Critical"
+      ],
+      "in_scope_only": true,
+      "auto_payout": false,
+      "visible_to_researchers": true,
+      "created_at": "2025-09-16T16:00:00Z"
+    },
+    {
+      "company_id": 1,
+      "asset_id": null,
+      "type": "points",
+      "currency": "USD",
+      "amount_min": 100,
+      "amount_max": 500,
+      "points_value": 9,
+      "eligible_severity": [
+        "High"
+      ],
+      "created_at": "2025-09-17T19:31:26.415Z",
+      "visible_to_researchers": true,
+      "id": 101
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 1,
+      "title": "Stored XSS on comment form",
+      "description": "When posting a comment with `<script>` payload it persists...",
+      "steps_to_reproduce": "1. Go to /comments\n2. Post input with `<script>alert(1)</script>`\n3. Observe alert on view page",
+      "poc_attachment_urls": [],
+      "severity": "High",
+      "status": "New",
+      "assigned_service_provider_id": null,
+      "company_notes": "",
+      "created_at": "2025-09-16T15:20:00Z",
+      "updated_at": "2025-09-16T15:20:00Z",
+      "cvss_score": 8.7,
+      "timeline": [
+        {
+          "user_id": 1,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-16T15:20:00Z"
+        }
+      ]
+    },
+    {
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 7,
+      "title": "as",
+      "description": "as",
+      "steps_to_reproduce": "asasas",
+      "severity": "Medium",
+      "status": "New",
+      "created_at": "2025-09-17T19:29:21.958Z",
+      "timeline": [
+        {
+          "user_id": 7,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-17T19:29:21.958Z"
+        }
+      ],
+      "id": 2,
+      "cvss_score": 5.4,
+      "poc_attachment_urls": [
+        "/uploads/report_2_poc.png"
+      ]
+    },
+    {
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 7,
+      "title": "account takeover",
+      "description": "asas",
+      "steps_to_reproduce": "asasas",
+      "severity": "High",
+      "status": "Accepted",
+      "created_at": "2025-09-24T13:14:35.419Z",
+      "timeline": [
+        {
+          "user_id": 7,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-24T13:14:35.419Z"
+        },
+        {
+          "action": "accepted",
+          "comment": "Accepted by company",
+          "timestamp": "2025-09-24T13:22:27.338Z"
+        }
+      ],
+      "id": 3,
+      "assigned_service_provider_id": 3,
+      "cvss_score": 9.8,
+      "poc_attachment_urls": []
+    },
+    {
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 7,
+      "title": "assas",
+      "description": "asa",
+      "steps_to_reproduce": "asas",
+      "severity": "Low",
+      "status": "Paid",
+      "created_at": "2025-09-24T13:44:20.280Z",
+      "timeline": [
+        {
+          "user_id": 7,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-24T13:44:20.280Z"
+        },
+        {
+          "action": "assigned",
+          "comment": "Assigned to provider ahmed (ID: 9)",
+          "timestamp": "2025-09-24T19:05:22.376Z"
+        },
+        {
+          "user_id": 8,
+          "action": "triage",
+          "comment": "Validated as true issue",
+          "timestamp": "2025-09-24T20:59:31.442Z"
+        },
+        {
+          "user_id": 8,
+          "action": "paid",
+          "comment": "Reward paid (demo)",
+          "timestamp": "2025-09-24T20:59:33.939Z"
+        }
+      ],
+      "id": 4,
+      "assigned_service_provider_id": 9,
+      "cvss_score": 3.4,
+      "poc_attachment_urls": []
+    },
+    {
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 7,
+      "title": "access control",
+      "description": "aaaa",
+      "steps_to_reproduce": "aaaa\naaa",
+      "severity": "High",
+      "status": "Assigned",
+      "created_at": "2025-09-24T20:21:53.422Z",
+      "timeline": [
+        {
+          "user_id": 7,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-24T20:21:53.422Z"
+        },
+        {
+          "action": "assigned",
+          "comment": "Assigned to provider ahmed (ID: 9)",
+          "timestamp": "2025-09-24T20:22:50.229Z"
+        }
+      ],
+      "id": 5,
+      "assigned_service_provider_id": 9,
+      "cvss_score": 7.5,
+      "poc_attachment_urls": [
+        "/uploads/report_5_video.mp4"
+      ]
+    },
+    {
+      "project_id": 1,
+      "company_id": 1,
+      "reporter_id": 7,
+      "title": "ssrf ",
+      "description": "aaaa",
+      "steps_to_reproduce": "aaaaaaaa",
+      "severity": "Medium",
+      "status": "Accepted",
+      "created_at": "2025-09-24T22:06:23.916Z",
+      "timeline": [
+        {
+          "user_id": 7,
+          "action": "created",
+          "comment": "Initial report",
+          "timestamp": "2025-09-24T22:06:23.916Z"
+        },
+        {
+          "action": "accepted",
+          "comment": "Accepted by company",
+          "timestamp": "2025-09-24T22:09:09.225Z"
+        }
+      ],
+      "id": 6,
+      "assigned_service_provider_id": 9,
+      "cvss_score": 6.3,
+      "poc_attachment_urls": []
+    }
+  ],
+  "assignments": [
+    {
+      "report_id": 4,
+      "provider_id": 9,
+      "status": "Assigned",
+      "assigned_at": "2025-09-24T19:05:22.330Z",
+      "negotiation_status": "pending_company_response",
+      "id": 1,
+      "provider_offer": "50"
+    },
+    {
+      "report_id": 5,
+      "provider_id": 9,
+      "status": "Assigned",
+      "assigned_at": "2025-09-24T20:22:50.172Z",
+      "negotiation_status": "pending_company_response",
+      "id": 2,
+      "provider_offer": "50"
+    },
+    {
+      "report_id": 6,
+      "provider_id": 9,
+      "status": "Assigned",
+      "assigned_at": "2025-09-24T22:09:03.658Z",
+      "negotiation_status": "pending_provider_offer",
+      "id": 3
+    }
+  ],
+  "notifications": [],
+  "assets": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "name": "acme.example.com",
+      "type": "web",
+      "in_scope": true,
+      "bounty_type": "cash",
+      "currency": "USD",
+      "amount_min": 100,
+      "amount_max": 1000,
+      "notes": "Main public website",
+      "endpoints": [
+        "https://acme.example.com/"
+      ],
+      "allowed_methods": [],
+      "testing_window": "24/7",
+      "asset_reward_options": []
+    },
+    {
+      "id": 2,
+      "company_id": 1,
+      "name": "api.acme.example.com",
+      "type": "api",
+      "in_scope": true,
+      "bounty_type": "points",
+      "points_value": 300,
+      "notes": "Public REST API",
+      "endpoints": [
+        "https://api.acme.example.com/"
+      ],
+      "allowed_methods": [
+        "GET",
+        "POST"
+      ],
+      "testing_window": "24/7",
+      "asset_reward_options": []
+    },
+    {
+      "company_id": 1,
+      "name": "",
+      "type": "web",
+      "in_scope": true,
+      "bounty_type": "cash",
+      "currency": "USD",
+      "amount_min": 100,
+      "amount_max": 500,
+      "points_value": 100,
+      "notes": "",
+      "endpoints": [
+        "as"
+      ],
+      "allowed_methods": [
+        "asa"
+      ],
+      "testing_window": "24/7",
+      "created_at": "2025-09-16T13:58:28.977Z",
+      "id": 3
+    },
+    {
+      "company_id": 1,
+      "name": "discovered1758549024623.example.com",
+      "type": "web",
+      "in_scope": true,
+      "bounty_type": "cash",
+      "currency": "USD",
+      "amount_min": 150,
+      "amount_max": 600,
+      "notes": "Auto-discovered web host",
+      "endpoints": [
+        "https://discovered1758549024623.example.com/"
+      ],
+      "allowed_methods": [],
+      "testing_window": "24/7",
+      "created_at": "2025-09-22T13:50:24.623Z",
+      "id": 4
+    },
+    {
+      "company_id": 1,
+      "name": "discovered-api1758549024623.example.com",
+      "type": "api",
+      "in_scope": true,
+      "bounty_type": "points",
+      "points_value": 200,
+      "notes": "Auto-discovered API",
+      "endpoints": [
+        "https://discovered-api1758549024623.example.com/"
+      ],
+      "allowed_methods": [
+        "GET",
+        "POST"
+      ],
+      "testing_window": "09:00-18:00",
+      "created_at": "2025-09-22T13:50:24.623Z",
+      "id": 5
+    },
+    {
+      "company_id": 1,
+      "name": "ahmedali.com",
+      "type": "web",
+      "in_scope": true,
+      "bounty_type": "cash",
+      "currency": "USD",
+      "amount_min": 100,
+      "amount_max": 500,
+      "points_value": 100,
+      "notes": "",
+      "endpoints": [],
+      "allowed_methods": [],
+      "testing_window": "24/7",
+      "created_at": "2025-09-22T16:16:29.460Z",
+      "id": 6
+    },
+    {
+      "company_id": 1,
+      "name": "mohamed.com",
+      "type": "api",
+      "in_scope": true,
+      "bounty_type": "cash",
+      "currency": "USD",
+      "amount_min": 150,
+      "amount_max": 500,
+      "points_value": 100,
+      "notes": "a",
+      "endpoints": [
+        "a"
+      ],
+      "allowed_methods": [
+        "a"
+      ],
+      "testing_window": "24/7",
+      "created_at": "2025-09-24T22:09:50.472Z",
+      "id": 7
+    }
+  ]
+}
