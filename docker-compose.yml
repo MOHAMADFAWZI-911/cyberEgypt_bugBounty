@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: bugbounty-backend
+    restart: always
+    ports:
+      - "4000:4000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_API_URL: http://13.48.56.144:4000
+    container_name: bugbounty-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
