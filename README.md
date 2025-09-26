@@ -83,7 +83,7 @@ Frontend (Main App): http://<Your-EC2-Public-IP>/
 
 Backend (API Test): http://<Your-EC2-Public-IP>:4000/users
 
-������️ Local Development (Without Docker)
+##  ������️ Local Development (Without Docker)
 Use this method for debugging and rapid development on your local machine.
 
 1. Installation
@@ -96,4 +96,6 @@ Bash
 
 # Start the frontend (Vite) and the backend (json-server) concurrently
 npm run dev
-Access: The application will be available at http://localhost:5173.      
+Access: The application will be available at http://localhost:5173.
+---
+
