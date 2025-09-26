@@ -1,8 +1,8 @@
-# BugBounty Demo â€” Full Stack (React + json-server + Docker)
+# CyberEgypt BugBounty platform â€” Full Stack (React + json-server + Docker)
 
-## í ½í³ Project Summary
+## ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Project Summary
 
-This project is a full-featured demo of a Bug Bounty platform, built with **React** and **Vite**. It utilizes **json-server** as a simple backend, storing all data in a local `db.json` file. The entire application is containerized using **Docker** for stable deployment on platforms like AWS EC2.
+This project is a full-featured Bug Bounty platform, built with **React** and **Vite**. It utilizes **json-server** as a simple backend, storing all data in a local `db.json` file. The entire application is containerized using **Docker** for stable deployment on platforms like AWS EC2.
 
 ### Key User Roles:
 1.  **Researcher:** Submits vulnerability reports and discovers programs.
@@ -11,7 +11,7 @@ This project is a full-featured demo of a Bug Bounty platform, built with **Reac
 
 ---
 
-## í ½í²» Tech Stack & Architecture
+## ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Tech Stack & Architecture
 
 | Component | Technology | Description |
 | :--- | :--- | :--- |
@@ -22,7 +22,7 @@ This project is a full-featured demo of a Bug Bounty platform, built with **Reac
 
 ---
 
-## í ½íº€ Deployment to AWS EC2 via Docker
+## ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Deployment to AWS EC2 via Docker
 
 To resolve the `net::ERR_NAME_NOT_RESOLVED` error and ensure external access, the application must be built using the public IP of the EC2 instance.
 
@@ -83,7 +83,7 @@ Frontend (Main App): http://<Your-EC2-Public-IP>/
 
 Backend (API Test): http://<Your-EC2-Public-IP>:4000/users
 
-í ½í» ï¸ Local Development (Without Docker)
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¸ Local Development (Without Docker)
 Use this method for debugging and rapid development on your local machine.
 
 1. Installation
